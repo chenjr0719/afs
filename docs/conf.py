@@ -179,3 +179,14 @@ source_suffix = ['.rst', '.md']
 
 def setup(app):
     app.add_stylesheet('css/custom.css')  # may also be an URL
+
+import os
+import sys
+
+root_directory = os.path.dirname(os.getcwd())
+sys.path.insert(0, root_directory)
+
+import afs
+
+version = afs.__version__
+release = afs.__version__
